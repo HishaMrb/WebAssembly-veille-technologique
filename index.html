@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WebAssembly Veille Technologique</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    
+    
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+    
+    <div class="site-navbar-wrap">
+      
+      <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-4">
+              <h1 class="my-0 site-logo"><a href="index.html">WEB<span style="font-weight: normal;" class="my-0 site-logo">ASSEMBLY</span></a></h1>
+            </div>
+            <div class="col-6 col-md-8">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+
+                  <div class="d-inline-block d-lg-block ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black">
+                    <span class="icon-menu h3"></span> <span class="menu-text"></span>
+                  </a></div>
+
+                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-none">
+                    <li><a href="#home-section" class="nav-link">Accueil</a></li>
+                    <li><a href="#definition-section" class="nav-link">Définition</a></li>
+                    <li><a href="#objectifs-section" class="nav-link">Objectifs</a></li>
+                    <li><a href="#cas-utilisation-section" class="nav-link">Cas d'utilisation</a></li>
+                    <li><a href="#js-wasm-section" class="nav-link">JS et WebAssembly</a></li>
+                    <li><a href="#concepts-section" class="nav-link">Concepts</a></li>
+                    <li><a href="#phases-section" class="nav-link">Phases sémantiques</a></li>
+                    <li><a href="#formats-section" class="nav-link">Formats</a></li>
+                    <li><a href="#langages-section" class="nav-link">Langages supportés</a></li>
+                    <li><a href="#wasm-summit-section" class="nav-link">WebAssembly Summit</a></li>
+                    <li><a href="#tendances-section" class="nav-link">Tendances</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- END .site-navbar-wrap -->
+    
+    <div class="site-blocks-cover" id="home-section">
+      <div class="img-wrap">
+        <div class="owl-carousel slide-one-item hero-slider">
+          <div>
+            <img src="images/webassembly.jpg" alt="Image" class="img-fluid">  
+          </div>
+        </div>
+      </div>
+    </div> <!-- END .site-blocks-cover -->
+
+    
+
+    <div class="site-section" id="definition-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 section-title">
+            <h2 class="title text-primary">Qu'est-ce que WebAssembly ?</h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-5">
+            <img src="images/webassembly_logo.png" alt="Image" class="img-fluid" class="img-fluid">
+          </div>
+          <div class="col-lg-8 mb-5 ml-auto section-title">
+            <p class="mb-4">Le site Web officiel de WebAssembly (https://webassembly.org) propose cette définition :</p>
+            <blockquote class="blockquote">  
+              <p>WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable target for compilation of high-level languages like C/C++/Rust, enabling deployment on the web for client and server applications.  
+              </p>
+            </blockquote>
+            <p class="mb-4">WebAssembly est un langage pouvant être exécuté dans les navigateurs, il fournit des gains majeurs en performance, il est conçu principalement pour être une cible de compilation efficace pour les langages de bas niveau tels que C, C ++ et Rust.
+             Il fournit un moyen d'exécuter un code écrit dans divers langages sur le web à une vitesse proche du natif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .END site-section -->
+
+
+    <div class="site-section bg-light" id="objectifs-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7 section-title text-center mx-auto">
+            <h2 class="title text-primary mb-3">Objectifs de WebAssembly</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 ml-auto">
+            <div class="row">
+              <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-laptop_mac display-4 text-primary d-block mb-4"></span>
+                  <h3>Efficace, Rapide et Portable</h3>
+                  <p>La machine de pile WebAssembly est conçue pour être encodée dans un format binaire efficace en termes de taille et de temps de chargement. WebAssembly vise à s'exécuter à la vitesse native en tirant parti des capacités matérielles communes disponibles sur une large gamme de plates-formes.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-pencil display-4 text-primary d-block mb-4"></span>
+                  <h3>Lisible et Debuggable</h3>
+                  <p>WebAssembly est conçu pour être imprimé dans un format textuel pour le débogage, le test, l'expérimentation, l'optimisation, l'apprentissage, l'enseignement et l'écriture de programmes à la main. Le format textuel sera utilisé lors de la visualisation de la source des modules Wasm sur le Web.</p>
+                </div>
+              </div>
+    
+              <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-security display-4 text-primary d-block mb-4"></span>
+                  <h3>Sécurisé</h3>
+                  <p>WebAssembly décrit un environnement d'exécution sécurisé en mémoire, qui peut même être implémenté dans des machines virtuelles JavaScript existantes. Lorsqu'il est intégré au Web, WebAssembly applique les politiques de sécurité de même origine et autorisations du navigateur.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+                <div class="service h-100">
+                  <span class="icon-web display-4 text-primary d-block mb-4"></span>
+                  <h3>Partie de Web</h3>
+                  <p>WebAssembly est conçu pour maintenir la nature sans version, testée et rétrocompatible du Web. Les modules WebAssembly pourront appeler dans et hors du contexte JavaScript et accéder aux fonctionnalités du navigateur via les mêmes API Web accessibles à partir de JavaScript. WebAssembly prend également en charge les intégrations non Web.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- END .site-section -->
+
+    <div class="site-section" id="cas-utilisation-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 section-title">
+            <h2 class="title text-primary">Cas d'utilisation</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <p class="mb-4">Le site officiel de WebAssembly contient une longue liste de cas d'utilisation potentiels. Techniquement, certains de ces cas d’utilisation sont réalisables avec juste de JavaScript, CSS et HTML, mais l’utlisation de WebAssembly peut offrir des gains majeurs en terme de performances, en fait l’utilisation d’un fichier binaire au lieu d'un seul fichier JavaScript peut réduire considérablement la taille du bundle ainsi que l'instanciation du module WebAssembly au chargement de la page accélère l'exécution du code.
+            </p> 
+            <p class="mb-4">Nous ne pouvons pas couvrir toute la liste des cas d’utilisation, mais voici quelques cas d’utilisation principaux qui représentes des améliorations significatives de la capacité de web :
+            </p>
+            <div class="d-flex">
+              <ul class="list-unstyled ul-check success mr-5">
+                <li>Edition d'images et des vidéos</li>
+                <li>Jeux</li>
+                <li>Reconnaissance d'image</li>
+                <li>Applications musicales</li>
+                <li>Réalité Virtuelle et Réalité Augmentée</li>
+                <li>Visualisation et simulation scientifiques</li>
+              </ul>
+            </div>
+            <p class="mb-3"><a href="https://webassembly.org/docs/use-cases/" class="readmore">Consulter la liste complète </a></p>
+          </div>
+      </div>  
+      </div>
+    </div> <!-- .END site-section -->
+
+    <div class="site-section" id="js-wasm-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 section-title">
+            <h2 class="title text-primary">JavaScript et WebAssembly</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <p class="mb-4">WebAssembly et JavaScript sont deux langages différents, et l’objectif principal de WebAssembly n’est pas de remplacer JavaScript mais de le compléter. WebAssembly est un langage bas niveau, comme l’Assembleur, il a un format binaire qui tourne avec des performances proches du natif et il est considéré comme une cible de compilation des langages de haut niveau comme C, C++ et Rust afin de pouvoir les tourner sur le web, et JavaScript est un langage haut niveau, flexible et suffisamment expressif pour écrire des applications web.  Il a beaucoup d'avantages, à titre d’exemple, il est dynamiquement typé, il ne nécessite aucune étape de compilation, et il a un grand écosystème qui lui fournit de puissants frameworks, outils et APIs.  
+            </p> 
+            <p class="mb-4">Les deux langages travaillent ensemble afin de permettre aux développeurs web de prendre avantage des avantages de chacun d’eux. Les deux différents types de code peuvent s'appeler si nécessaire, en fait l'API JavaScript de WebAssembly rend l'interopérabilité relativement simple entre les deux technologies, l’API enveloppe le code exporté avec des fonctions JavaScript qui peuvent être appelées normalement et le code WebAssembly peut importer et appeler normalement de manière synchrone les fonctions JavaScript.
+            </p>
+          </div>
+      </div>  
+      </div>
+    </div> <!-- .END site-section -->
+
+    <div class="site-section" id="concepts-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 section-title">
+            <h2 class="title text-primary">Concepts du langage</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <p class="mb-4"></p>La spécification de base indique que le code de WebAssembly est un langage de programmation de type assembleur de bas niveau. La spécification définit la structure, l'exécution et la validation de ce langage ainsi que les détails des formats binaire « wasm » et texte « wat ». Le langage WebAssembly est structuré autour de plusieurs concepts qui se retrouvent totalement dans l'API WebAssembly JavaScript.Ces concepts sont nécessaires pour comprendre le fonctionnement de WebAssembly dans les navigateur : 
+            </p>
+            <div class="d-flex">
+              <ul class="list-unstyled ul-check success mr-5">
+                <li><strong class="text-black">Valeurs, </strong>ou plutôt types de valeurs fournis par WebAssembly.</li>
+                <li><strong class="text-black">Table, </strong>qui est un tableau de valeurs d'un type d'élément particulier (tels que les références de fonction) qui ne peut pas être stocké de manière brute en mémoire pour des raisons de sécurité et de portabilité.</li>
+                <li><strong class="text-black">Mémoire, </strong>un ArrayBuffer redimensionnable qui contient un tableau d'octets contiguë accessible en lecture/écriture par les instructions bas niveau d'accès mémoire du WebAssembly.</li>
+                <li><strong class="text-black">Instance, </strong>un module associé avec tous les états qu'il utilise à l'exécution à savoir la mémoire, la table et un ensemble de données importées. Une instance est comme un module ES2015 qui a été chargée dans un contexte global avec un ensemble d'imports.</li>
+                <li><strong class="text-black">Module, </strong>représente un binaire WebAssembly qui a été compilé en code exécutable par le navigateur.  Un module est sans état et peut donc être explicitement mis en cache dans IndexedDB ou partagé entre le contexte fenêtre et les workers. Un module déclare des imports et exports au même titre qu'un module ES2015.</li>
+                </ul>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div> <!-- .END site-section -->
+
+    <div class="site-section" id="phases-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 section-title">
+            <h2 class="title text-primary">Phases sémantiques</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <p class="mb-4">La spécification principale décrit les différentes phases qu'un module WebAssembly subit lorsqu'il est utilisé dans un environnement tel qu'un navigateur. Conceptuellement, la sémantique de WebAssembly est divisée en trois phases, dont la troisième phase est divisée aussi en deux sous phases :  
+            </p>
+            <div class="d-flex">
+              <ul class="list-unstyled ul-check success mr-5">
+                <li><strong class="text-black">Décodage : </strong>le format binaire est converti en module.</li>
+                <li><strong class="text-black">Validation : </strong>le module décodé subit des vérifications de validation (telle que la vérification de type) pour s'assurer que le module est bien formé et sécurisé.</li>
+                <li><strong class="text-black">Instanciation (partie 1 de l'Exécution) : </strong>une instance de module, qui est la représentation dynamique du module, est instanciée en initialisant les mémoires et les tables et appelle la fonction start () du module.</li>
+                <li><strong class="text-black">Invocation (partie 2 de l'Exécution) : </strong>les fonctions exportées sont appelées à partir de l'instance de module.</li>
+              </ul>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div> <!-- .END site-section -->
+
+    <div class="site-section" id="formats-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 section-title">
+            <h2 class="title text-primary">Formats de WebAssembly</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <p class="mb-4">WebAssembly a deux formats, un format binaire et un format texte. Les deux formats correspondent à une structure commune sous la forme d'une syntaxe abstraite. Pour mieux comprendre la syntaxe abstraite, elle peut être expliquée dans le contexte d'un arbre de syntaxe abstraite (AST). Un AST est une représentation arborescente de la structure du code source d'un langage de programmation.
+            </p>
+          </div>  
+          <div class="col-lg-12">
+            <h3>Format binaire (.wasm)</h3>
+            <p class="mb-4">Le format binaire de WebAssembly est très efficace, il permet un décodage rapide, une petite taille de fichier et une utilisation réduite de la mémoire. La représentation de fichier du format binaire est un fichier « .wasm », qui sera la sortie de compilation d'Emscripten. Les concepts Valeurs, Types et Instructions sont couverts dans le contexte de l'encodage. Par exemple, selon la spécification, les types Entier sont codés à l'aide du codage entier de longueur variable LEB128, dans une variante non signée ou signée. Ce sont des détails importants à savoir si vous souhaitez développer des outils pour WebAssembly, mais pas nécessaires si vous prévoyez simplement de les utiliser sur votre site Web.                
+            </p>
+          </div>
+          <div class="col-lg-12">
+            <h3>Format texte (.wat)</h3>  
+            <p class="mb-4">De la même manière que les langages assembleur physique, le format binaire du WebAssembly a une représentation textuelle . Le format textuel des modules WebAssembly est un rendu de leur syntaxe abstraite en S-expressions qui sont des notations pour les données de liste imbriquées (arborescentes). Essentiellement, ils fournissent un moyen simple et élégant de représenter des données basées sur une liste sous forme textuelle.
+            </p>
+            <p class="mb-4">Le format texte permet la représentation d'un module WebAssembly binaire sous forme textuelle. Cela a des implications profondes en ce qui concerne la facilité de développement et de débogage. Avoir une représentation textuelle d'un module WebAssembly permet aux développeurs de visualiser la source d'un module chargé dans un navigateur. Le site officiel décrit les cas d'utilisation qui ont conduit à la conception du format texte :
+              <div class="d-flex">
+                <ul class="list-unstyled ul-check success mr-5">
+                  <li>Afficher la source sur un module WebAssembly, s'intégrant ainsi au Web (où chaque source peut être consultée) de manière naturelle.</li>
+                  <li>Présentation dans les outils de développement de navigateur lorsque les cartes sources ne sont pas présentes.</li>
+                  <li>Écrire le code WebAssembly directement pour des raisons pédagogiques, expérimentales, débogage, optimisation et test de la spécification elle-même.</li>
+                  <p>Le dernier élément de la liste indique que le format de texte n'est pas destiné à être écrit à la main au cours du développement normal, mais plutôt généré à partir d'un outil comme Emscripten. Vous ne verrez ou ne manipulerez probablement aucun fichier « .wat » lorsque vous générez des modules, mais vous pouvez les visualiser dans un contexte de débogage.</p>
+                </ul>
+              </div>
+              </p>
+          </div>
+      </div>  
+      </div>
+    </div> <!-- .END site-section -->
+
+    <div class="site-section" id="langages-section">
+      <div class="container">
+        <div class="row mb-5 ">
+          <div class="col-lg-6 section-title">
+            <h2 class="title text-primary">Langages supportés</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <h3>C / C++</h3>
+            <p class="mb-4">La prise en charge de C et C ++ est également intégrée à Emscripten, donc en plus de simplifier le processus de compilation, Emscripten nous permet de tirer parti des capacités complètes de WebAssembly. L’outil permet de compiler C/C++ dans un module WebAssembly, de générer un code JavaScript qui va permettre le chargement et l’exécution du module ainsi que la création d’un fichier HTML qui va afficher les résultats d’exécution du code compilé.
+            </p>
+            <p class="mb-4">Emscripten compile le code à travers la chaîne de compilation « clang + LLVM », ensuite il transforme le résultat compilé en binaire « .wasm ». Emscripten crée le document HTML et le code JavaScript nécessaire, car WebAssembly ne peut pour l’instant pas accéder directement au DOM, il appelle JavaScript avec des données du type primitif entier ou flottant, ainsi pour accéder à toute API Web, WebAssembly a besoin d'appeler du JavaScript qui va effectuer par la suite l'appel à l'API Web.
+            </p>
+            <p class="mb-4">Emscripten implémente des bibliothèques C/C++ comme SDL, OpenGL, OpenAL, ces bibliothèques sont implémentées sous forme d'API Web et donc chacune d'entre elles requiert un peu de code JavaScript généré pour relier WebAssembly à l'API Web sous-jacente, ainsi que le code JavaScript implémente les fonctionnalités de chaque librairie utilisée par le C/C++. Le code JavaScript contient aussi la logique pour appeler l'API JavaScript WebAssembly pour chercher, charger et exécuter le fichier « .wasm ».
+            </p>
+            <p class="mb-4">Le document HTML généré charge le fichier JavaScript contenant le code JavaScript généré et écrit un « stdout » dans un « TextArea », et si l'application utilise OpenGL, le fichier HTML contient aussi un élément qui est utilisé comme cible de rendu. En fait, il est simple de modifier la sortie Emscripten pour en faire l'application web que nous souhaitons.
+            </p>
+            <p class="mb-4"><a href="https://webassembly.org/docs/c-and-c++/" class="readmore">Consulter la documentation</a></p>
+          </div>
+        </div>
+      
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <h3>Rust</h3>
+            <p class="mb-4">C et C ++ étaient censés être les principaux langages utilisés pour WebAssembly, mais Rust est un substitut parfaitement adapté. Rust est un langage de programmation de systèmes qui est syntaxiquement similaire au C ++. Il a été conçu en pensant à la sécurité de la mémoire, mais conserve les avantages de performances du C et du C ++. La version actuelle du compilateur de Rust peut générer des fichiers « .wasm » à partir du code source de Rust.
+            </p>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <h3>Autres langages</h3>
+            <p class="mb-4">Techniquement il est possible de transpiler un langage en C ou C++ et par conséquent le compiler dans un module WebAssembly, mais le succès de la compilation dépend de la sortie du transcripteur, souvent nous devrons apporter des modifications au code pour le faire fonctionner.
+            </p>
+            <p class="mb-4">Sinon, divers outils existent pour permettre l'utilisation de WebAssembly avec certains des autres langages de programmation, bien qu'ils soient principalement expérimentaux :
+              <div class="d-flex">
+                <ul class="list-unstyled ul-check success mr-5">
+                  <li>Blazor pour C#</li>
+                  <li>TeaVM ou Bytecoder pour Java</li>
+                  <li>TeaVM pour Kotlin</li>
+                  <li>AssemblyScript pour TypeScript</li>
+                  <li>WebIDL pour Haxe</li>
+                </ul>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>    
+    </div>
+    
+    <div class="site-section" id="wasm-summit-section">
+      <div class="container">
+        <div class="row mb-5 ">
+          <div class="col-md-8 section-title text-center mx-auto">
+            <h2 class="title text-primary">WebAssembly Summit</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+            <img src="images/summit1.jpg" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="images/summit2.jpg" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="images/summit3.jpg" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="images/summit4.jpg" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="images/summit5.jpg" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="images/summit6.jpg" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="images/summit7.jpg" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="images/summit8.jpg" alt="Image" class="img-fluid" class="img-fluid">
+            <img src="images/summit10.jpg" alt="Image" class="img-fluid" class="img-fluid">
+          </div>
+          <div class="col-lg-5 h-100 jm-sticky-top mr-auto order-2 order-lg-1">
+            <p class="mb-4">WebAssembly Summit est un ensemble des conférences d'une seule journée sur tout ce qui concerne WebAssembly. Cet événement communautaire est organisé par Mozilla et Google, pour soutenir l'inclusivité et l'accessibilité.</p>
+            <p class="mb-4">Le WebAssembly Summit s'est tenu dans la Silicon Valley, le 10 Février 2020, à Google, 1625 Plymouth St Mountain View CA.</p>
+            <p class="mb-4">Voici la liste des Speakers de cet événement :</p>
+            <p class="mb-4"><strong class="text-black">Alon Zakai,</strong> créateur d'Emscripten, maintenant de Google, a fourni d'excellentes informations sur le "Shipping Tiny WebAssembly Builds".
+              <a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=_lLqZR4ufSI&list=PL6ed-L7Ni0yQ1pCKkw1g3QeN2BQxXvCPK&index=3&t=0s" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Regarder la conférence</span></a>
+            </p>
+            <p class="mb-4"><strong class="text-black">Ashley Williams,</strong> de Cloudflare, a fait un excellent exposé sur l'avenir de WebAssembly et sa relation avec d'autres technologies de support telles que JavaScript.
+              <a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=J5Rs9oG3FdI&list=PL6ed-L7Ni0yQ1pCKkw1g3QeN2BQxXvCPK&index=4&t=55s" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Regarder la conférence</span></a>
+            </p>
+            <p class="mb-4"><strong class="text-black">Tadeu Zagallo,</strong> d'Apple, a partagé des résultats intéressants de la recherche et du développement dans les domaines d'analyse comparative de la compilation, du démarrage et de l'exécution pour la mise en œuvre de l’implémentation WebAssembly WebKit.
+              <a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=1v4wPoMskfo&list=PL6ed-L7Ni0yQ1pCKkw1g3QeN2BQxXvCPK&index=4" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span></span> <span>Regarder la conférence</span></a>
+            </p>
+            <p class="mb-4"><strong class="text-black">Peter Salomonsen,</strong> a montré comment composer et interpréter de la musique à l'aide de WebAssembly.
+              <a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=C8j_ieOm4vE&list=PL6ed-L7Ni0yQ1pCKkw1g3QeN2BQxXvCPK&index=5" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Regarder la conférence</span></a>
+            </p>
+            <p class="mb-4"><strong class="text-black">Jonathan Beri,</strong> a défini l'Internet des Objets "IoT" en termes de systèmes embarqués et a ensuite exploré l'utilisation de WebAssembly comme langage intermédiaire pour les environnements d'exécution embarqués.
+              <a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=oky3FdsTuUM&list=PL6ed-L7Ni0yQ1pCKkw1g3QeN2BQxXvCPK&index=6" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Regarder la conférence</span></a>
+            </p>
+            <p class="mb-4"><strong class="text-black">Kevin Hoffman,</strong> de Capital One, a expliqué les avantages de Wasm et il a montré comment construire un avenir sans conteneur avec WebAssembly.
+              <a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=vqBtoPJoQOE&list=PL6ed-L7Ni0yQ1pCKkw1g3QeN2BQxXvCPK&index=7" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Regarder la conférence</span></a>
+            </p>  
+            <p class="mb-4"><strong class="text-black">Brion Vibber,</strong> de MediaWiki, a discuté de l’architecture de compatibilité des médias ogv.js de Wikipédia ainsi que des défis actuels qui existent dans l’espace multimédia riche dans le navigateur. Brion a montré comment utiliser WebAssembly comme "video polyfill".
+              <a data-fancybox data-ratio="2" href="https://www.youtube.com/watch?v=rGhasYrH5Vo&list=PL6ed-L7Ni0yQ1pCKkw1g3QeN2BQxXvCPK&index=8" class="d-flex align-items-center"><span class="icon-play_circle_outline h4 m-0 mr-2"></span> <span>Regarder la conférence</span></a>
+            </p>              
+          </div>
+        </div>
+        <p class="mb-4"><a href="https://webassembly-summit.org/" class="readmore">Consulter le site web de WebAssembly Summit</a></p>                 
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="tendances-section">
+      <div class="container">
+         <div class="row mb-5 ">
+          <div class="col-md-7 section-title text-center mx-auto">
+            <h2 class="title text-primary mb-3">Tendances</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <blockquote class="blockquote">
+              <p>Trois ans après Chrome, Google Earth est enfin disponible sur Edge, Firefox et Opera grâce à WebAssembly.</p>
+              <p class="mb-4"><a href="https://medium.com/google-earth/google-earth-comes-to-more-browsers-thanks-to-webassembly-1877d95810d6" class="readmore">Lire l'article</a></p>
+            </blockquote>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <blockquote class="blockquote">
+              <blockquote class="blockquote">
+                <p>Firefox 74 va inaugurer un nouveau mécanisme de protection. Le processus implique de convertir le code en WebAssembly avant de le recompiler en code natif.</p>
+                <p class="mb-4"><a href="https://hacks.mozilla.org/2020/02/securing-firefox-with-webassembly/" class="readmore">Lire l'article</a></p>
+              </blockquote>
+            </blockquote>
+          </div>
+          
+          <div class="col-lg-6 mb-4">
+            <blockquote class="blockquote">
+              <blockquote class="blockquote">
+                <p>Créez des applications Uno Platform WebAssembly dans Visual Studio sur Windows à l'aide de la compilation Ahead of Time (AOT).</p>
+                <p class="mb-4"><a href="https://platform.uno/blog/build-net-aot-for-webassembly-in-visual-studio-with-uno-platform/" class="readmore">Lire l'article</a></p>
+              </blockquote>
+            </blockquote>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <blockquote class="blockquote">
+              <blockquote class="blockquote">
+                <p>Silverlight est de retour grâce à WebAssembly</p>
+                <p class="mb-4"><a href="https://opensilver.net/announcements/introducing-opensilver.aspx" class="readmore">Lire l'article</a></p>
+              </blockquote>
+            </blockquote>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="row mb-5">
+              <div class="col-12">
+                <h3 class="footer-heading mb-4">À propos de nous</h3>
+                <p>Ce site web a pour objectif de partager avec vous les réultats de ma veille technologique autour de la nouvelle technologie WebAssembly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 ml-auto"> 
+            <div class="row mb-5">
+              <div class="col-12 text-center">
+                <h3 class="footer-heading mb-4">Suivez nous</h3>
+                <a href="https://twitter.com/Hicham90944124" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+              </div>
+            </div>
+            
+          </div>
+        
+          <div class="col-lg-3 mb-5 mb-lg-0">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4">Liens utils</h3>
+              </div>
+              <div class="col-md-12 col-lg-12">
+                <ul class="list-unstyled">
+                  <li><a href="https://webassembly.org/">Site officiel de WebAssembly</a></li>
+                  <li><a href="https://webassembly.github.io/spec/">Spécifications de WebAssembly</a></li>
+                  <li><a href="https://webassemblyjobs.com/">WebAssembly Jobs<a></li>
+                  <li><a href="https://wasmer.io/">Wasmer</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col-md-12">
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
+            with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+          
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/stickyfill.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+
+     
+  </body>
+</html>
